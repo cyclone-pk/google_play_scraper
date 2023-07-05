@@ -106,7 +106,6 @@ class App {
   final int? ratings;
   final int? reviews;
   final List<int>? histogram;
-  final double? price;
   final bool? isFree;
   final String? currency;
   final bool? isSale;
@@ -152,7 +151,7 @@ class App {
       this.ratings,
       this.reviews,
       this.histogram,
-      this.price,
+  
       this.isFree,
       this.currency,
       this.isSale,
@@ -199,7 +198,7 @@ class App {
         ratings: json['ratings'],
         reviews: json['reviews'],
         histogram: json['histogram'],
-        price: json['price'],
+  
         isFree: json['free'],
         currency: json['currency'],
         isSale: json['sale'],
@@ -247,7 +246,6 @@ class App {
       'ratings': ratings,
       'reviews': reviews,
       'histogram': histogram,
-      'price': price,
       'isFree': isFree,
       'currency': currency,
       'isSale': isSale,
